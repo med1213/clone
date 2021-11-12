@@ -1,0 +1,32 @@
+<div class="header-wrapper">
+    <div class="header" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+        <div class="logo">
+            <img src="../../../assets/imgs/logoweb.png" alt="logo">
+        </div>
+        <div class="head-menu">
+            <ul>
+                <li><a [routerLink]="['/']">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">payments</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+
+        <div class="head-cart">
+            <a [routerLink]="['/cart']" class="cart"><i
+                    class="fa fa-shopping-bag"></i><span class="cart-count">{{ itemInCart }}</span></a>
+
+            <!-- <a href="#" class="cart"><i class="fa fa-user"></i></a> -->
+        </div>
+    </div>
+
+    <div class="search-box">
+        <div class="promotion">best sale of the month</div>
+        <div class="box">
+            <input type="text" placeholder="search products...">
+            <button>search</button>
+        </div>
+        <div class="promotion">flash sale black friday</div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+.wrap-footer {
+    width: 100%;
+    background: #fff;
+  
+    .footer {
+        .footer-news {
+            width: 100%;
+            min-width: 1366px;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+            padding: 3rem 0.8rem;
+            border-bottom: 1px solid #f1f1f1;
+
+            .footer-news-blog {
+                padding: 0 1.5rem;
+                line-height: 1.5;
+                h2{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+
+                .submit {
+                    display: flex;
+                    .form-control {
+                        height: 40px;
+                        width: 100%;
+                        padding: 0.5rem;
+                        border: 1px solid #f1f1f1;
+                        outline: none;
+                        border-radius: 4px 0 0px 4px;
+                    }
+
+                    .submit-btn {
+                        width: 140px;
+                        background-color: #c40316;
+                        padding: 0 20 px;
+                        width: 140 px;
+                        background: #c40316;
+                        color: #ffffff;
+                        font-size: 12px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        border: 0;
+                        display: block;
+                        transition: 0.3s;
+                        border-radius: 0 4px 4px 0;
+                        outline: none;
+                        cursor: pointer;
+                        &:hover{
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-list{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            padding: 3rem 1rem;
+            border-bottom: 1px solid #f1f1f1;
+
+            .footer-items{
+                h3{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                    padding-bottom: .5rem;
+                    border-bottom: 2px solid #c40316;
+                    display: inline-block;
+                }
+
+                ul{
+                    li{
+                        padding: .3rem 0;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        a{
+                            color: #222;
+                            transition: all .5s;
+                            &:hover{
+                                color: #c40316;
+                            }
+                        }
+                    }
+                }
+
+                .social{
+                    display: flex;
+                    li{
+                        margin-right: .5rem;
+                    }
+                    .fa{
+                        font-size: 18px;
+                        padding: .5rem;
+                        color: #fff;
+                        border-radius: 4px;
+                        transition: 0.3s;
+                        &:hover{
+                            background: #c40316;
+                        }
+                    }
+                    .fa-youtube-play{
+                        background: #f00;
+                    }
+                    .fa-facebook-official{
+                        background: #3b5998;
+                    }
+                    .fa-instagram{
+                        background: #bc2a8d;;
+                    }
+                    .fa-twitter{
+                        background: #00aced;;
+                    }
+                }
+            }
+        }
+
+        .footer-copyright{
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 1rem;
+            align-items: center;
+
+            span{
+                text-transform: capitalize;
+            }
+
+            strong{
+                color: #c40316;
+            }
+        }
+    }
+}

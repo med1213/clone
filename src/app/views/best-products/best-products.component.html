@@ -1,0 +1,34 @@
+<!-- Best products -->
+<div class="best-product-wrapper">
+
+    <div class="best-product-title">
+        <h2>Best Selling Products</h2>
+    </div>
+
+    <div class="best-product-blog">
+
+        <div *ngFor="let item of BestArrayList">
+            <a href="#" class="best-product-item">
+                <div class="best-product-img">
+                    <img src="{{item.img}}" alt="">
+                </div>
+
+                <div class="best-product-content">
+                    <div class="best-product-name">
+                        <p>{{item.name}}</p>
+                    </div>
+                    <div class="best-product-price">
+                        <div class="price">
+                            <del>${{item.off}}</del>
+                            <span>${{item.sale}}</span>
+                        </div>
+                        <div class="add-to-cart">
+                            <button class="btn-to-cart"><i class="fa fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>

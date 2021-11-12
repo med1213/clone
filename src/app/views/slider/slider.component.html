@@ -1,0 +1,152 @@
+<div class="menu-slider">
+
+    <div class="menu-wrapper">
+
+        <div class="main-menu">
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#">Notebook <i class="fa fa-angle-right"></i></a>
+                        <div class="sidebar-menu">
+                            <div class="sidebar-menu-group">
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Mobile <i class="fa fa-angle-right"></i></a>
+                        <div class="sidebar-menu">
+                            <div class="sidebar-menu-group">
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-menu-item">
+                                    <div class="sidebar-name">
+                                        <h5>Mobiles</h5>
+                                    </div>
+                                    <div class="sidebar-list">
+                                        <ul>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                            <li><a href="#">page 1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Fashions <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Accessories <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Electronic <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Smart watch <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">health and beauty <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Gaming gears <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Headphone <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Food Fruit <i class="fa fa-angle-right"></i></a> </li>
+                    <li><a href="#">Drink <i class="fa fa-angle-right"></i></a> </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="slider-wrapper">
+
+        <div class="slide-box">
+            <div id="slider" #slide>
+                <div class="card" *ngFor="let slide of SliderArrays">
+                    <div class="slide-img">
+                        <img src="{{slide.image}}" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button (click)="prev()" class="btn-prev"><i class="fa fa-angle-left"></i></button>
+        <button (click)="next()" class="btn-next"><i class="fa fa-angle-right"></i></button>
+    </div>
+</div>

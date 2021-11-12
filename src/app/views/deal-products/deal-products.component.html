@@ -1,0 +1,33 @@
+ <!-- Deals Pro -->
+ <div class="deals-wrapper">
+    <div class="deals-title">
+        <h2>Deals Of The Month</h2>
+    </div>
+
+    <div class="deals-thum">
+
+        <div *ngFor="let prod of products">
+            <div class="deals-item">
+                <a [routerLink]="['/product-detail', prod.id]" >
+                    <div class="deals-img">
+                        <img [src]="prod.imgUrl" alt="products">
+                    </div>
+                    <div class="deals-contents">
+                        <p> {{ prod.name }}</p>
+                    </div>
+                </a>
+                <div class="deals-price">
+                    <div class="sale">${{ prod.pricesale }}</div>
+                    <div class="off"><del>${{ prod.priceoff }}</del></div>
+                </div>
+                <div class="btn-cart">
+                    <button (click)= 'addToCart(prod)'>add to cart</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+
+</div>

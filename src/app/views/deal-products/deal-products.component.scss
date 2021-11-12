@@ -1,0 +1,82 @@
+.deals-wrapper {
+    padding-bottom: 3rem;
+
+    .deals-title {
+        padding: 2rem 0;
+        h2 {
+            border-bottom: 3px solid #c40316;
+            display: inline-block;
+        }
+    }
+
+    .deals-thum {
+        background: #fff;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-items: center;
+
+        .deals-item {
+            width: 100%;
+            padding: 1rem;
+            border-right: 1px solid #ebebeb;
+            display: flex;
+            flex-flow: column;
+            .deals-img {
+                width: 100%;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .deals-contents,
+            .deals-price,
+            .btn-cart {
+                padding: 0.5rem 0;
+                text-align: center;
+            }
+            .deals-contents {
+                font-size: 15px;
+                color: #007bff;
+                transition: 0.3s;
+                &:hover {
+                    color: #c40316;
+                }
+                p {
+                    height: 40px;
+                    line-height: 1.4;
+                    font-weight: 400;
+                    word-break: break-word;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+            }
+            .deals-price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .sale,
+                .off {
+                    padding: 0 0.5rem;
+                    color: #222;
+                    font-weight: 500;
+                }
+                .off {
+                    color: #c40316;
+                }
+            }
+            .btn-cart {
+                button {
+                    outline: 0;
+                    background: #c40316;
+                    padding: 0.4rem 0.75rem;
+                    border: 1px solid #c40316;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

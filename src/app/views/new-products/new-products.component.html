@@ -1,0 +1,32 @@
+<!-- New products -->
+<div class="new-product-wrapper">
+
+    <div class="new-product-title">
+        <h2>New Arrivals</h2>
+    </div>
+    <div class="new-product-item">
+
+        <div *ngFor="let item of NewArrayList">
+            <a href="#" class="new-product-blog">
+                <div class="new-product-img">
+                    <img src="{{item.img}}" alt="new">
+                </div>
+                <div class="new-product-content">
+                    <div class="product-name">
+                        <p>{{item.name}}</p>
+                    </div>
+                    <div class="products">
+                        <div class="new-price">
+                            <del>${{item.off}}</del>
+                            <span>${{item.sale}}</span>
+                        </div>
+                        <div class="new-cart">
+                            <button class="new-btn-cart"><i class="fa fa-shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>

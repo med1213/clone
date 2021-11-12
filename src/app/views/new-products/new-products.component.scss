@@ -1,0 +1,81 @@
+// new products
+.new-product-wrapper {
+    padding: 3rem 0;
+    .new-product-title {
+        padding: 2rem 0;
+        h2 {
+            border-bottom: 3px solid #c40316;
+            display: inline-block;
+        }
+    }
+    .new-product-item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-gap: 1rem;
+        background: #fff;
+        .new-product-blog:hover {
+            color: #c40316;
+        }
+        .new-product-blog {
+            display: flex;
+            color: #007bff;
+            padding: 2rem 1rem;
+            border-right: 1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            .new-product-img {
+                width: 40%;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .new-product-content {
+                width: 60%;
+                padding: 0 0.5rem;
+                .product-name {
+                    margin-bottom: 2rem;
+                    line-height: 1.5;
+                }
+                .products {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .new-price {
+                        del {
+                            color: #c40316;
+                            margin-right: 0.5rem;
+                        }
+                        span {
+                            color: #222;
+                            font-weight: 500;
+                        }
+                    }
+                    .new-cart {
+                        .new-btn-cart {
+                            background: #c40316;
+                            border: 2px solid #c40316;
+                            padding: 0.5rem;
+                            border-radius: 4px;
+                            transition: 0.5s;
+                            .fa {
+                                color: #fff;
+                                font-size: 18px;
+                            }
+                        }
+                        .new-btn-cart:hover {
+                            background: #fff;
+                            border: 2px solid #c40316;
+                            .fa {
+                                color: #c40316;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

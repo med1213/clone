@@ -1,0 +1,60 @@
+<app-slider></app-slider>
+
+<div class="home-wrapper">
+    <!-- category -->
+    <div class="home-category">
+        <div *ngFor="let item of CatArrayList">
+            <a href="#" class="home-category-item">
+                <div class="home-category-name">
+                    <h4>{{item.name}}</h4>
+                    <span>{{item.amounts}} products</span>
+                </div>
+                <div class="home-category-img">
+                    <img src="{{item.img}}" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <app-deal-products></app-deal-products>
+
+    <!-- product-ads -->
+    <div class="product-ads">
+        <a href="#" class="product-ads-item">
+            <img src="../../../assets/imgs/banner6.jpg" alt="ads">
+        </a>
+        <a href="#" class="product-ads-item">
+            <img src="../../../assets/imgs/banner7.jpg" alt="ads">
+        </a>
+        <a href="#" class="product-ads-item">
+            <img src="../../../assets/imgs/banner8.jpg" alt="ads">
+        </a>
+    </div>
+
+    <app-new-products></app-new-products>
+
+    <!-- // products ads2 -->
+    <div class="adstwo-wrapper">
+        <div class="adstwo-item">
+            <div class="ads2">
+                <img src="../../../assets/imgs/banner4.jpg" alt="">
+
+            </div>
+            <div class="ads2">
+                <img src="../../../assets/imgs/banner5.jpg" alt="">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <app-best-products></app-best-products>
+
+    <!-- adsverties -->
+    <div class="adsverties">
+        <a href="#" class="adsverties-img">
+            <img src="../../../assets/imgs/banner16.jpg" alt="">
+        </a>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+// best products
+
+.best-product-wrapper {
+    margin-bottom: 2rem;
+    .best-product-title {
+        padding: 2rem 0;
+        h2 {
+            border-bottom: 3px solid #c40316;
+            display: inline-block;
+        }
+    }
+
+    .best-product-blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 1rem;
+        .best-product-item {
+            width: 100%;
+            display: flex;
+            color: #007bff;
+            padding: 2rem 1rem;
+            border-bottom: 1px solid #ebebeb;
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            .best-product-img {
+                width: 40%;
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .best-product-content {
+                width: 60%;
+                .best-product-name {
+                    margin-bottom: 1rem;
+                    line-height: 1.5;
+                }
+
+                .best-product-price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .price {
+                        del {
+                            color: #c40316;
+                            margin-right: 0.5rem;
+                        }
+                        span {
+                            color: #222;
+                            font-weight: 500;
+                        }
+                    }
+                    .add-to-cart {
+                        .btn-to-cart{
+                            background: #c40316;
+                            border: 2px solid #c40316;
+                            padding: 0.5rem;
+                            border-radius: 4px;
+                            transition: 0.5s;
+                            .fa {
+                                color: #fff;
+                                font-size: 18px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
